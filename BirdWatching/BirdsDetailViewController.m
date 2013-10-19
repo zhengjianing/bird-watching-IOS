@@ -22,14 +22,12 @@
     if (_sighting != newSighting) {
         _sighting = newSighting;
         
-        // Update the view.
         [self configureView];
     }
 }
 
 - (void)configureView
 {
-    // Update the user interface for the detail item.
     BirdSighting *theSighting = self.sighting;
     
     static NSDateFormatter *formatter = nil;
@@ -47,14 +45,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
